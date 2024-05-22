@@ -1,0 +1,2 @@
+require("haurumtech")
+print("hello")
