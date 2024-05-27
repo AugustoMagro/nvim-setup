@@ -1,9 +1,13 @@
 
 -- My Remaps
-vim.keymap.set("n", "<leader><leader>s", function() vim.cmd("w")  end)
-vim.keymap.set("n", "<leader><leader>q", function() vim.cmd("q")  end)
-vim.keymap.set("n", "<leader><leader>S", function() vim.cmd("w!")  end)
-vim.keymap.set("n", "<leader><leader>Q", function() vim.cmd("q!")  end)
+vim.keymap.set("n", "<C-w>", function() 
+    vim.cmd("w")  
+end)
+vim.keymap.set("n", "<leader><leader>q", function() 
+    vim.cmd("q")  
+end)
+--vim.keymap.set("n", "<leader><leader>W", function() vim.cmd("w!")  end)
+--vim.keymap.set("n", "<leader><leader>Q", function() vim.cmd("q!")  end)
 
 -- Theprimeagen Remaps
 vim.g.mapleader = " "
