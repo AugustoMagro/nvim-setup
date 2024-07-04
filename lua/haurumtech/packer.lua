@@ -13,18 +13,18 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use({
-	  'sainnhe/gruvbox-material',
-	  lazy = false,
-	  priority = 1000,
-	  config = function()
+  --use({
+  -- 'sainnhe/gruvbox-material',
+--	  lazy = false,
+--	  priority = 1000,
+--	  config = function()
 		  -- Optionally configure and load the colorscheme
 		  -- directly inside the plugin declaration.
-		  vim.g.gruvbox_material_enable_italic = true
-		  vim.cmd.colorscheme('gruvbox-material')
-	  end
-  })
-
+--		  vim.g.gruvbox_material_enable_italic = true
+--		  vim.cmd.colorscheme('gruvbox-material')
+--	  end
+--  })
+  use { "catppuccin/nvim", as = "catppuccin" }
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('nvim-treesitter/playground', {run = ':TSUpdate'})
   use('ThePrimeagen/harpoon')
